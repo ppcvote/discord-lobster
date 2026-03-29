@@ -25,7 +25,7 @@ Zero npm dependencies. Zero database. **$0/month** running cost.
 ## Quick Start
 
 ```bash
-git clone https://github.com/ppcvote/lobster-kit.git
+git clone https://github.com/ppcvote/discord-lobster.git
 cd lobster-kit
 cp .env.example .env
 # Edit .env with your tokens and channel IDs
@@ -160,7 +160,7 @@ Lobster Kit 讓你的 Discord 自己活起來 — 不需要你 24 小時在線�
 ## 快速開始
 
 ```bash
-git clone https://github.com/ppcvote/lobster-kit.git
+git clone https://github.com/ppcvote/discord-lobster.git
 cd lobster-kit
 cp .env.example .env
 # 編輯 .env 填入你的 token 和頻道 ID
