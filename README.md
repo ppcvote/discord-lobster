@@ -121,6 +121,9 @@ lobster-kit/
 ├── lib/
 │   ├── config.js   # .env loader + configuration
 │   └── utils.js    # Discord API, Gemini, webhook helpers
+├── extras/
+│   ├── blog-to-threads.js  # Auto-convert blog posts into social teasers
+│   └── agent-meeting.js    # Multi-agent standup meetings with avatars
 ├── data/           # Runtime state (gitignored)
 ├── logs/           # Log files (gitignored)
 ├── .env.example    # Configuration template
@@ -128,6 +131,22 @@ lobster-kit/
 ```
 
 **Zero dependencies** — uses only Node.js built-in `https`, `fs`, `path`, `crypto` modules.
+
+## Bonus: Extras
+
+### Blog to Threads (`extras/blog-to-threads.js`)
+Picks a random blog post → Gemini rewrites it as a 100-200 char teaser → posts to Threads. Never repeats. Perfect for automated content distribution.
+
+```bash
+node extras/blog-to-threads.js --dry-run
+```
+
+### Agent Meeting (`extras/agent-meeting.js`)
+4 AI agents hold a daily standup in your Discord, each with their own avatar and personality. They discuss community topics, banter, and end with an open question for members.
+
+```bash
+node extras/agent-meeting.js --dry-run
+```
 
 ## Setup Service
 
